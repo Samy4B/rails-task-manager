@@ -3,7 +3,7 @@
 <ul>
   <% @tasks.each do |task| %>
     <li>
-      <%= link_to task.title, show_task_path(task) %><br>
+      <%= link_to task.title, task_path(task) %>
       <%= task.details %><br>
       <%= task.completed ? "Completed" : "Not completed" %>
       <%= link_to 'Edit', edit_task_path(task) %> |
